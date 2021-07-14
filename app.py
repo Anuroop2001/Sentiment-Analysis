@@ -11,6 +11,8 @@ from sklearn.naive_bayes import MultinomialNB
 from nltk.tokenize.toktok import ToktokTokenizer
 import nltk
 
+model = pickle.load(open('SentimentAnalysis.p','rb'))
+
 st.title("Sentiment Analysis")
 st.subheader("Enter Text to analyise: ")
 text = st.text_input(" ")
