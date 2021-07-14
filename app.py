@@ -17,7 +17,7 @@ text = st.text_input(" ")
 text = [text]
 y_out = model.predict(text)
 
-    if st.button("Predict"):
+if st.button("Predict"):
         
 
         if (y_out == "Positive"):
